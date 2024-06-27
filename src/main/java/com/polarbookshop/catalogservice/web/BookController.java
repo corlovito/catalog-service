@@ -40,6 +40,10 @@ public class BookController {
 		log.info("Fetching the book with ISBN {} from the catalog", isbn);
 		return bookService.viewBookDetails(isbn);
 	}
+  @GetMapping("/app-version")
+  public String getAppVersion() {
+    return "Version: 1.0.0"; // Здесь вы можете указать текущую версию вашего приложения
+    }
 
 	@PostMapping
 	@ResponseStatus(HttpStatus.CREATED)
