@@ -42,7 +42,7 @@ public class BookController {
 	}
   @GetMapping("/app-version")
   public String getAppVersion() {
-    return "Version: 2.0.0"; // Здесь вы можете указать текущую версию вашего приложения
+    return "Version: 3.0.0"; // Здесь вы можете указать текущую версию вашего приложения
     }
 
 	@PostMapping
