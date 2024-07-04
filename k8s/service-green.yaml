@@ -4,7 +4,7 @@ metadata:
   name: rollout-bluegreen-preview
   namespace: default
 spec:
-  type: LoadBalancer
+  type: ClusterIP
   ports:
   - port: 80
     targetPort: 3000

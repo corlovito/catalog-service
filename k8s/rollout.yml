@@ -54,7 +54,7 @@ spec:
             name: catalog-config
   strategy:
     blueGreen:
-      activeService: rollout-bluegreen-active
+      activeService: catalog-service
       previewService: rollout-bluegreen-preview
       autoPromotionEnabled: false
   revisionHistoryLimit: 2
