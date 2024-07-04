@@ -267,3 +267,11 @@ replicas:
 - path: spec/replicas
   create: true
   kind: Rollout
+# Images
+- kind: Rollout
+  fieldSpecs:
+  - path: spec/template/spec/containers/image
+    kind: Rollout
+  - path: spec/template/spec/initContainers/image
+    kind: Rollout
+
