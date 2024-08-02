@@ -1,8 +1,6 @@
 name: Commit Stage
 
-on: 
-  pull_request:
-    types: [closed]
+on: push
 
 env:
   REGISTRY: ghcr.io
